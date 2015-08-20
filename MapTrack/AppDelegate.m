@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  MapTrack
 //
-//  Created by baijf on 8/20/15.
+//  Created by Junne on 8/20/15.
 //  Copyright (c) 2015 Junne. All rights reserved.
 //
 

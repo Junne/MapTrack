@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23503B77F45B166F6BB212BC /* libPods-MapTrack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E194548BDA997563C6B36BDD /* libPods-MapTrack.a */; };
 		F55E53D21B85CD5900EE6E70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E53D11B85CD5900EE6E70 /* main.m */; };
 		F55E53D51B85CD5900EE6E70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E53D41B85CD5900EE6E70 /* AppDelegate.m */; };
 		F55E53D81B85CD5900EE6E70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E53D71B85CD5900EE6E70 /* ViewController.m */; };
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36E991726C23B2C2EEFB5BC4 /* Pods-MapTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapTrack/Pods-MapTrack.debug.xcconfig"; sourceTree = "<group>"; };
+		E194548BDA997563C6B36BDD /* libPods-MapTrack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapTrack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5EF6C921738784439781CC1 /* Pods-MapTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapTrack/Pods-MapTrack.release.xcconfig"; sourceTree = "<group>"; };
 		F55E53CC1B85CD5900EE6E70 /* MapTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55E53D01B85CD5900EE6E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F55E53D11B85CD5900EE6E70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23503B77F45B166F6BB212BC /* libPods-MapTrack.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		428F54A4342EBF7011C9D0A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36E991726C23B2C2EEFB5BC4 /* Pods-MapTrack.debug.xcconfig */,
+				E5EF6C921738784439781CC1 /* Pods-MapTrack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D38E0FA2E475EF960FF740D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E194548BDA997563C6B36BDD /* libPods-MapTrack.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F55E53C31B85CD5900EE6E70 = {
 			isa = PBXGroup;
 			children = (
 				F55E53CE1B85CD5900EE6E70 /* MapTrack */,
 				F55E53E81B85CD5900EE6E70 /* MapTrackTests */,
 				F55E53CD1B85CD5900EE6E70 /* Products */,
+				428F54A4342EBF7011C9D0A3 /* Pods */,
+				D38E0FA2E475EF960FF740D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F55E53EF1B85CD5900EE6E70 /* Build configuration list for PBXNativeTarget "MapTrack" */;
 			buildPhases = (
+				B61783C687CFC4719C3C7DE9 /* Check Pods Manifest.lock */,
 				F55E53C81B85CD5900EE6E70 /* Sources */,
 				F55E53C91B85CD5900EE6E70 /* Frameworks */,
 				F55E53CA1B85CD5900EE6E70 /* Resources */,
+				79164414A5CE500706B33617 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79164414A5CE500706B33617 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapTrack/Pods-MapTrack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B61783C687CFC4719C3C7DE9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F55E53C81B85CD5900EE6E70 /* Sources */ = {
@@ -347,6 +406,7 @@
 		};
 		F55E53F01B85CD5900EE6E70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36E991726C23B2C2EEFB5BC4 /* Pods-MapTrack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MapTrack/Info.plist;
@@ -357,6 +417,7 @@
 		};
 		F55E53F11B85CD5900EE6E70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5EF6C921738784439781CC1 /* Pods-MapTrack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MapTrack/Info.plist;
@@ -418,6 +479,7 @@
 				F55E53F11B85CD5900EE6E70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F55E53F21B85CD5900EE6E70 /* Build configuration list for PBXNativeTarget "MapTrackTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +488,7 @@
 				F55E53F41B85CD5900EE6E70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
