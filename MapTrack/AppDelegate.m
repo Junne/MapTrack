@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MTCLLocationManager.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [[MTCLLocationManager shareManager] requestAlwaysAuthorization];
+    [[MTCLLocationManager shareManager] startMonitoringSignificantLocationChanges];
     return YES;
 }
 

@@ -7,21 +7,36 @@
 //
 
 #import "ViewController.h"
+#import "MTCLLocationManager.h"
+#import <MapKit/MapKit.h>
 
-@interface ViewController ()
+
+@interface ViewController () <MKMapViewDelegate,CLLocationManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet MKMapView *MapTrackView;
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.MapTrackView.showsUserLocation = YES;
+    self.MapTrackView.userTrackingMode = MKUserTrackingModeFollow;
+    
+    if ([self respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+        
+        [[MTCLLocationManager  shareManager] requestAlwaysAuthorization];
+    }
+    
+    [[MTCLLocationManager  shareManager] startMonitoringSignificantLocationChanges];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

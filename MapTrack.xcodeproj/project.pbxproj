@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		23503B77F45B166F6BB212BC /* libPods-MapTrack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E194548BDA997563C6B36BDD /* libPods-MapTrack.a */; };
+		F54B31771B86B4C800A3C50B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54B316E1B86B3F800A3C50B /* CoreLocation.framework */; };
+		F54B31791B86BAB600A3C50B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54B31781B86BAB600A3C50B /* Foundation.framework */; };
+		F54B317B1B86BAC200A3C50B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54B317A1B86BAC200A3C50B /* UIKit.framework */; };
+		F54B317D1B86BADC00A3C50B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54B317C1B86BADC00A3C50B /* MapKit.framework */; };
+		F54B31811B86BE4800A3C50B /* MTCLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F54B31801B86BE4800A3C50B /* MTCLLocationManager.m */; };
 		F55E53D21B85CD5900EE6E70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E53D11B85CD5900EE6E70 /* main.m */; };
 		F55E53D51B85CD5900EE6E70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E53D41B85CD5900EE6E70 /* AppDelegate.m */; };
 		F55E53D81B85CD5900EE6E70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E53D71B85CD5900EE6E70 /* ViewController.m */; };
@@ -15,6 +20,7 @@
 		F55E53DD1B85CD5900EE6E70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55E53DC1B85CD5900EE6E70 /* Images.xcassets */; };
 		F55E53E01B85CD5900EE6E70 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55E53DE1B85CD5900EE6E70 /* LaunchScreen.xib */; };
 		F55E53EC1B85CD5900EE6E70 /* MapTrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E53EB1B85CD5900EE6E70 /* MapTrackTests.m */; };
+		F59F724A1B86C8E10013602F /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = F59F72491B86C8E10013602F /* Location.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +37,12 @@
 		36E991726C23B2C2EEFB5BC4 /* Pods-MapTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTrack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapTrack/Pods-MapTrack.debug.xcconfig"; sourceTree = "<group>"; };
 		E194548BDA997563C6B36BDD /* libPods-MapTrack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapTrack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EF6C921738784439781CC1 /* Pods-MapTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapTrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapTrack/Pods-MapTrack.release.xcconfig"; sourceTree = "<group>"; };
+		F54B316E1B86B3F800A3C50B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F54B31781B86BAB600A3C50B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F54B317A1B86BAC200A3C50B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F54B317C1B86BADC00A3C50B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F54B317F1B86BE4800A3C50B /* MTCLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCLLocationManager.h; sourceTree = "<group>"; };
+		F54B31801B86BE4800A3C50B /* MTCLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCLLocationManager.m; sourceTree = "<group>"; };
 		F55E53CC1B85CD5900EE6E70 /* MapTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55E53D01B85CD5900EE6E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F55E53D11B85CD5900EE6E70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,6 +56,8 @@
 		F55E53E51B85CD5900EE6E70 /* MapTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55E53EA1B85CD5900EE6E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F55E53EB1B85CD5900EE6E70 /* MapTrackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapTrackTests.m; sourceTree = "<group>"; };
+		F59F72481B86C8E10013602F /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		F59F72491B86C8E10013602F /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54B317D1B86BADC00A3C50B /* MapKit.framework in Frameworks */,
+				F54B317B1B86BAC200A3C50B /* UIKit.framework in Frameworks */,
+				F54B31791B86BAB600A3C50B /* Foundation.framework in Frameworks */,
+				F54B31771B86B4C800A3C50B /* CoreLocation.framework in Frameworks */,
 				23503B77F45B166F6BB212BC /* libPods-MapTrack.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,9 +95,24 @@
 		D38E0FA2E475EF960FF740D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F54B317C1B86BADC00A3C50B /* MapKit.framework */,
+				F54B317A1B86BAC200A3C50B /* UIKit.framework */,
+				F54B31781B86BAB600A3C50B /* Foundation.framework */,
+				F54B316E1B86B3F800A3C50B /* CoreLocation.framework */,
 				E194548BDA997563C6B36BDD /* libPods-MapTrack.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F54B317E1B86BD4500A3C50B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F54B317F1B86BE4800A3C50B /* MTCLLocationManager.h */,
+				F54B31801B86BE4800A3C50B /* MTCLLocationManager.m */,
+				F59F72481B86C8E10013602F /* Location.h */,
+				F59F72491B86C8E10013602F /* Location.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F55E53C31B85CD5900EE6E70 = {
@@ -105,6 +138,7 @@
 		F55E53CE1B85CD5900EE6E70 /* MapTrack */ = {
 			isa = PBXGroup;
 			children = (
+				F54B317E1B86BD4500A3C50B /* Model */,
 				F55E53D31B85CD5900EE6E70 /* AppDelegate.h */,
 				F55E53D41B85CD5900EE6E70 /* AppDelegate.m */,
 				F55E53D61B85CD5900EE6E70 /* ViewController.h */,
@@ -194,6 +228,11 @@
 				TargetAttributes = {
 					F55E53CB1B85CD5900EE6E70 = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					F55E53E41B85CD5900EE6E70 = {
 						CreatedOnToolsVersion = 6.4;
@@ -278,6 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54B31811B86BE4800A3C50B /* MTCLLocationManager.m in Sources */,
+				F59F724A1B86C8E10013602F /* Location.m in Sources */,
 				F55E53D81B85CD5900EE6E70 /* ViewController.m in Sources */,
 				F55E53D51B85CD5900EE6E70 /* AppDelegate.m in Sources */,
 				F55E53D21B85CD5900EE6E70 /* main.m in Sources */,
