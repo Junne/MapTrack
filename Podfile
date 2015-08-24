@@ -3,6 +3,8 @@
 
 target 'MapTrack' do
 pod 'Realm'
+pod 'AwesomeMenu'
+pod 'Masonry'
 end
 
 target 'MapTrackTests' do

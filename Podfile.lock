@@ -1,12 +1,18 @@
 PODS:
+  - AwesomeMenu (1.0.0)
+  - Masonry (0.6.2)
   - Realm (0.94.1):
     - Realm/Headers (= 0.94.1)
   - Realm/Headers (0.94.1)
 
 DEPENDENCIES:
+  - AwesomeMenu
+  - Masonry
   - Realm
 
 SPEC CHECKSUMS:
+  AwesomeMenu: 34bad7f873e4b3cfaa6651fabbb96607d0e8f2b3
+  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   Realm: d999a6cf0b41577a077349c9cc9d496cc62a7d17
 
 COCOAPODS: 0.38.2
