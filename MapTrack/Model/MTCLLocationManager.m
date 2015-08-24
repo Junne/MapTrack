@@ -38,15 +38,16 @@
     CLLocation *location = locations.lastObject;
     NSLog(@"location = %@", location);
     
-    
+    [self saveLocation:location];
 }
 
 - (void)saveLocation:(CLLocation *)location {
     
     Location *locationObject  = [Location new];
     locationObject.timestamp  = location.timestamp;
-    locationObject.latitude   = [NSNumber numberWithDouble:location.coordinate.latitude];
-    locationObject.longtitude = [NSNumber numberWithDouble:location.coordinate.longitude];
+    locationObject.latitude   = location.coordinate.latitude;
+    locationObject.longtitude = location.coordinate.longitude;
+//    locationObject.coord = location.coordinate;
     
     RLMRealm *realm = [RLMRealm defaultRealm];
     

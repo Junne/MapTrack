@@ -7,26 +7,28 @@
 //
 
 #import <Realm/Realm.h>
+#import <MapKit/MapKit.h>
 
-@class Run;
+//@class Run;
 
 @interface Location : RLMObject
 
-@property NSNumber *latitude;
-@property NSNumber *longtitude;
+@property double latitude;
+@property double longtitude;
 @property NSDate   *timestamp;
+//@property CLLocationCoordinate2D coord;
 //@property Run      *run;
 
 @end
 RLM_ARRAY_TYPE(Location) // define RLMArray<Location>
 
-@interface Run : RLMObject
-
-@property NSNumber *distance;
-@property NSNumber *duration;
-@property NSDate   *timestamp;
-@property NSOrderedSet *locations;
-
-@end
-RLM_ARRAY_TYPE(Run)
+//@interface Run : RLMObject
+//
+//@property long *distance;
+//@property long *duration;
+//@property NSDate   *timestamp;
+//@property NSOrderedSet *locations;
+//
+//@end
+//RLM_ARRAY_TYPE(Run)
 
