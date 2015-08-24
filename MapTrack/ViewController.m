@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import "MTCLLocationManager.h"
-#import "Realm/Realm.h"
+#import <Realm/Realm.h>
 #import "AwesomeMenu.h"
 #import "Location.h"
 #import <MapKit/MapKit.h>
+#import <Masonry/Masonry.h>
+
 
 
 @interface ViewController () <MKMapViewDelegate,CLLocationManagerDelegate, AwesomeMenuDelegate>
@@ -80,11 +82,8 @@
     menu.nearRadius = 90.0f;
 //    menu.animationDuration = 0.3f;
     
-    
     menu.startPoint = CGPointMake(50.0, 410.0);
     [self.view addSubview:menu];
-    
-    
     
 }
 
