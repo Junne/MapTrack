@@ -20,6 +20,7 @@
 		F55E53DD1B85CD5900EE6E70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55E53DC1B85CD5900EE6E70 /* Images.xcassets */; };
 		F55E53E01B85CD5900EE6E70 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55E53DE1B85CD5900EE6E70 /* LaunchScreen.xib */; };
 		F55E53EC1B85CD5900EE6E70 /* MapTrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F55E53EB1B85CD5900EE6E70 /* MapTrackTests.m */; };
+		F561892E1B8D675F005C66BA /* MapTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F561892D1B8D675F005C66BA /* MapTrackViewController.m */; };
 		F59F724A1B86C8E10013602F /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = F59F72491B86C8E10013602F /* Location.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		F55E53E51B85CD5900EE6E70 /* MapTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55E53EA1B85CD5900EE6E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F55E53EB1B85CD5900EE6E70 /* MapTrackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapTrackTests.m; sourceTree = "<group>"; };
+		F561892C1B8D675F005C66BA /* MapTrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTrackViewController.h; sourceTree = "<group>"; };
+		F561892D1B8D675F005C66BA /* MapTrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTrackViewController.m; sourceTree = "<group>"; };
 		F59F72481B86C8E10013602F /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		F59F72491B86C8E10013602F /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +144,8 @@
 				F54B317E1B86BD4500A3C50B /* Model */,
 				F55E53D31B85CD5900EE6E70 /* AppDelegate.h */,
 				F55E53D41B85CD5900EE6E70 /* AppDelegate.m */,
+				F561892C1B8D675F005C66BA /* MapTrackViewController.h */,
+				F561892D1B8D675F005C66BA /* MapTrackViewController.m */,
 				F55E53D61B85CD5900EE6E70 /* ViewController.h */,
 				F55E53D71B85CD5900EE6E70 /* ViewController.m */,
 				F55E53D91B85CD5900EE6E70 /* Main.storyboard */,
@@ -322,6 +327,7 @@
 				F55E53D81B85CD5900EE6E70 /* ViewController.m in Sources */,
 				F55E53D51B85CD5900EE6E70 /* AppDelegate.m in Sources */,
 				F55E53D21B85CD5900EE6E70 /* main.m in Sources */,
+				F561892E1B8D675F005C66BA /* MapTrackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

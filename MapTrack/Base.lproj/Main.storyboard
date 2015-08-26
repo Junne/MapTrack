@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jXi-2h-ltK">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Om0-fx-EWk"/>
                                 </connections>
@@ -31,12 +31,84 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jXi-2h-ltK" secondAttribute="bottom" id="oey-io-frC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Y8N-MQ-VrC"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="MapTrackView" destination="jXi-2h-ltK" id="l4r-SI-xN3"/>
+                        <segue destination="xVR-Og-aSX" kind="show" identifier="MapTrack" id="SCW-h0-bJ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="894" y="400"/>
+        </scene>
+        <!--Map Track View Controller-->
+        <scene sceneID="nPv-YM-ep6">
+            <objects>
+                <viewController storyboardIdentifier="MapTrack" id="xVR-Og-aSX" customClass="MapTrackViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AMb-I7-sD7"/>
+                        <viewControllerLayoutGuide type="bottom" id="5no-Oz-4Gf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H6a-UL-GLR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zXC-UW-nvL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xVR-Og-aSX" id="A0P-F4-4Wy"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qab-xe-8Wb">
+                                <rect key="frame" x="30" y="428" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="glF-IZ-FEN"/>
+                                    <constraint firstAttribute="width" constant="22" id="v3P-HJ-hX6"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showInfoAction:" destination="xVR-Og-aSX" eventType="touchUpInside" id="5Yu-db-jBN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-yS-ZIb">
+                                <rect key="frame" x="30" y="50" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="Y07-RB-NMv"/>
+                                    <constraint firstAttribute="height" constant="22" id="igY-gj-PhU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="—">
+                                    <color key="titleColor" red="0.21198920830000001" green="0.80007372669999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backAction:" destination="xVR-Og-aSX" eventType="touchUpInside" id="4qh-UG-iQS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5no-Oz-4Gf" firstAttribute="top" secondItem="zXC-UW-nvL" secondAttribute="bottom" id="Gx6-HV-eNh"/>
+                            <constraint firstItem="zXC-UW-nvL" firstAttribute="leading" secondItem="H6a-UL-GLR" secondAttribute="leading" id="K1n-92-ze1"/>
+                            <constraint firstAttribute="trailing" secondItem="zXC-UW-nvL" secondAttribute="trailing" id="LiI-pB-45e"/>
+                            <constraint firstItem="aIS-yS-ZIb" firstAttribute="leading" secondItem="H6a-UL-GLR" secondAttribute="leading" constant="30" id="PbY-he-DsP"/>
+                            <constraint firstItem="zXC-UW-nvL" firstAttribute="top" secondItem="H6a-UL-GLR" secondAttribute="top" id="e7c-u3-pzh"/>
+                            <constraint firstItem="Qab-xe-8Wb" firstAttribute="leading" secondItem="H6a-UL-GLR" secondAttribute="leading" constant="30" id="nRh-XE-aHU"/>
+                            <constraint firstItem="aIS-yS-ZIb" firstAttribute="top" secondItem="AMb-I7-sD7" secondAttribute="bottom" constant="30" id="u6Z-7m-SGg"/>
+                            <constraint firstItem="5no-Oz-4Gf" firstAttribute="top" secondItem="Qab-xe-8Wb" secondAttribute="bottom" constant="30" id="x8V-K8-naB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoButton" destination="Qab-xe-8Wb" id="DD7-PZ-ChN"/>
+                        <outlet property="mapTrackView" destination="zXC-UW-nvL" id="Prq-Au-jFm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jOV-rW-SrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310" y="405"/>
         </scene>
     </scenes>
 </document>

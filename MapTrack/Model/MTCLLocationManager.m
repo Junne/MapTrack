@@ -29,6 +29,8 @@
         
         self.delegate = self;
         self.desiredAccuracy = kCLLocationAccuracyBest;
+        self.pausesLocationUpdatesAutomatically = NO;
+        self.activityType = CLActivityTypeAutomotiveNavigation;
     }
     return self;
 }
@@ -47,7 +49,6 @@
     locationObject.timestamp  = location.timestamp;
     locationObject.latitude   = location.coordinate.latitude;
     locationObject.longtitude = location.coordinate.longitude;
-//    locationObject.coord = location.coordinate;
     
     RLMRealm *realm = [RLMRealm defaultRealm];
     
